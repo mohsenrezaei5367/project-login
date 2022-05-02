@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: kalmeh;
+    src: url("../fonts/kalameh/Kalameh_Bold.ttf"),
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #0a0a32 !important;
+    font-family: kalmeh !important;
+
+}
+h1{
+    color: #fff;
+}
