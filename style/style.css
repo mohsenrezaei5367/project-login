@@ -352,12 +352,9 @@ body {
     }
     .text {
         margin: 0;
+        
     }
-    @media (max-width: 600px) {
-        .text {
-            font-size: 10px;
-        }
-    }
+    
     .text p {
         display: none;
     }
@@ -378,3 +375,40 @@ label.error {
 input.error{
     border: 1px solid  #ff0000;
 }
+
+@media (max-width:600px) {
+    .text-blue{
+        font-size: 1.3rem !important;
+    }
+ }
+ 
+
+ /* dashboard style ................................... */
+.nav-link {
+    cursor: pointer;
+    min-width: 100% !important;
+    padding: 0.6rem 0;
+    border-radius: 5px !important;
+    border: none;
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    font-size: 1.2rem;
+    outline: none;
+    margin: 5px;
+    
+   
+   
+}
+
+.nav-tabs {
+   border: none !important;
+    height: 100%;
+}
+
+ .tab-content{
+height: 89vh;
+background-color:var(--primary-color) !important; 
+padding: 10px;
+color: #ffff;
+margin-top: 10px !important;
+ }

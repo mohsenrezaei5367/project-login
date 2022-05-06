@@ -1,4 +1,4 @@
-let wrapper = $("body");
+let wrapper = $(".main");
 let load = 0;
 let int = setInterval(blurring, 20);
 const scale = (number, inMin, inMax, outMin, outMax) => {
@@ -16,12 +16,9 @@ function blurring() {
     });
 }
 
-$(function () {
-    $("input").attr("required", true);
-});
+
 
 $(function () {
-
     let container = document.getElementById("container");
 
     toggle = () => {
@@ -35,7 +32,7 @@ $(function () {
 })
 
 // validation forms
-$(function () {
+function validationRegisterForm() {
     let registerForm = $("#register-form");
     if (registerForm.length) {
         registerForm.validate({
@@ -51,8 +48,8 @@ $(function () {
                     required: true
                 },
                 phone: {
-                    minlength:11,
-                    maxlength:11,
+                    minlength: 11,
+                    maxlength: 11,
                 },
             },
             messages: {
@@ -64,15 +61,15 @@ $(function () {
                 password: "Please enter your password",
                 phone: {
                     required: "Please enter your phone",
-                    minlength:'phone number is less than 11 digit',
-                    maxlength:"phone number is more than 11 digit"
+                    minlength: 'phone number is less than 11 digit',
+                    maxlength: "phone number is more than 11 digit"
 
                 },
             },
 
 
-            submitHandler: function (form) {
-                form.submit();
+            submitHandler: function (registerForm) {
+                registerForm.submit();
             }
 
         })
@@ -80,12 +77,15 @@ $(function () {
 
 
 
+}
+validationRegisterForm()
 
 
+function btnLogin(e){
 
 
-    $("#acceptRegister").on('click', function (e) {
-        e.preventDefault
-        console.log(e)
-    })
-})
+    window.open("dashboard.html", "_self");
+   
+}
+// end of validation
+
