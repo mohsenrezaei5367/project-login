@@ -9,94 +9,66 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/fontawesome-free-6.1.1-web/css/all.css">
-  
-
-
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="col-md-12 p-0">
             <div class="row">
-
                 <div class="col-md-12 p-0">
                     <div id="container" class="container">
                         <!-- FORM SECTION -->
                         <div class="row">
                             <!-- SIGN UP -->
-                            <div class="col align-items-center flex-col
-                                    sign-up">
-                                <div class="form-wrapper
-                                        align-items-center">
+                            <div class="col align-items-center flex-col sign-up">
+                                <div class="form-wrapper align-items-center">
                                     <div class="form sign-up">
-                                        <div class="input-group">
-                                           
-                                            <input type="text" placeholder="Username">
-                                        </div>
-                                        <div class="input-group">
-                                            
-                                            <input type="email" placeholder="Email">
-                                        </div>
-                                        <div class="input-group">
-                                            
-                                            <input type="password" placeholder="Password">
-                                        </div>
-                                        <div class="input-group">
-                                            
-
-
-                                            <input type="text" placeholder="Phone">
-                                        </div>
-                                        <button  class=" btn-login">
-                                            Accept
-                                        </button>
-                                        <p>
-                                            <span>
-                                                Already have an account?
-                                            </span>
-                                            <button onclick="toggle()"  class=" btn-login">
-                                                back to login
-                                            </button>
-                                        </p>
+                                        <form id="register-form" name="register-form">
+                                            <div class="input-group">
+                                                <input type="text" placeholder="username" name="username" required/>
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" placeholder="email address" name="email" required />
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" placeholder="password" name="password" required/>
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Phone" name="phone" required/>
+                                            </div>
+                                            <button class=" btn-login" id="create-button">Accept</button>
+                                            <p><span>Already have an account?</span>
+                                                <button onclick="toggle()" class=" btn-login"> back to login</button>
+                                            </p>
+                                        </form>
                                     </div>
                                 </div>
-
                             </div>
                             <!-- END SIGN UP -->
-                            <!-- SIGN IN -->
-                            <div class="col align-items-center flex-col
-                                    sign-in">
-                                <div class="form-wrapper
-                                        align-items-center">
-                                    <div class="form sign-in">
-                                        <div class="input-group">
-                                            
-                                            <input type="text" placeholder="Username">
-</div>
-<div class="input-group">
 
-<input type="password" placeholder="Password">
-                                        </div>
-                                        <button class="btn-login">
-                                       Login
-                                        </button>
-                                        <p>
-                                            <a href="#" class="forgot-password">
-                                                Forgot password?
-                                            </a>
-                                        </p>
-                                        <p>
-                                            <span>
-                                                Don't have an account?
-                                            </span>
-                                            <button onclick="toggle()" class=" btn-login">
-                                              Register
-                                            </button>
-                                        </p>
+                            <!-- SIGN IN -->
+                            <div class="col align-items-center flex-col sign-in">
+                                <div class="form-wrapper align-items-center">
+                                    <div class="form sign-in">
+                                        <form class="login-form">
+                                            <div class="input-group">
+                                                <input id="login-username" type="text" placeholder="username" name="login-username" />
+                                            </div>
+                                            <div class="input-group">
+                                                <input id="login-password" type="text" placeholder="password" name="login-password" />
+                                            </div>
+
+                                            <button class="btn-login" name="login-button" type="button" id="login-button">login</button>
+                                            <p>
+                                                <a href="#" class="forgot-password">Forgot password?</a>
+                                            </p>
+                                            <p><span> Don't have an account?</span>
+                                                <button onclick="toggle()" class=" btn-login">Register</button>
+                                            </p>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="form-wrapper">
-
                                 </div>
                             </div>
                             <!-- END SIGN IN -->
@@ -110,23 +82,17 @@
                                     <h2>
                                         Welcome
                                     </h2>
-
                                 </div>
                                 <div class="img sign-in">
-
                                 </div>
                             </div>
                             <!-- END SIGN IN CONTENT -->
                             <!-- SIGN UP CONTENT -->
                             <div class="col align-items-center flex-col">
                                 <div class="img sign-up">
-
                                 </div>
                                 <div class="text sign-up">
-                                    <h2>
-                                        Join with us
-                                    </h2>
-
+                                    <h2>Join Us</h2>
                                 </div>
                             </div>
                             <!-- END SIGN UP CONTENT -->
@@ -135,8 +101,10 @@
                     </div>
                 </div>
             </div>
+
             <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
             <script src="./node_modules/jquery/dist/jquery.js"></script>
+            <script src="./node_modules/jquery-validation/dist/jquery.validate.js"></script>
             <script src="./js/login.js"></script>
 </body>
 
