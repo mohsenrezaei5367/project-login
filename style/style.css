@@ -413,12 +413,19 @@ background-size: cover;
 
 .container-dashboard figure{
     border: 2px solid #fff;
+    overflow: hidden;
+    transition: all 500ms;
 }
 
 .container-dashboard  img{
     width: 100%;
     height: 300px;
+    transform: scale(1);
  
+}
+.container-dashboard  img:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
 }
 
 .btn-danger {
@@ -438,8 +445,18 @@ background-size: cover;
     width: 70%;
     height: 100%;
     cursor: pointer;
+    transition: all 500ms;
    
   
+}
+.btn-danger:hover{
+    transform: scale(1.1);
+    border: 2px solid #fff !important;
+}
+.btn-danger:hover p{
+    font-size: 20px;
+    transition: all 500ms;
+    
 }
 
  
