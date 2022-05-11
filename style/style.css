@@ -384,31 +384,71 @@ input.error{
  
 
  /* dashboard style ................................... */
-.nav-link {
-    cursor: pointer;
-    min-width: 100% !important;
-    padding: 0.6rem 0;
-    border-radius: 5px !important;
-    border: none;
-    background-color: var(--primary-color) !important;
-    color: var(--white) !important;
-    font-size: 1.2rem;
-    outline: none;
-    margin: 5px;
+ .container-dashboard{
+    width: 100%;
     
-   
-   
+background: url('../images/background.jpg')no-repeat center center;
+background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.container-dashboard .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-tabs {
-   border: none !important;
+.container-dashboard .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100%;
+  
+   
 }
 
- .tab-content{
-height: 89vh;
-background-color:var(--primary-color) !important; 
-padding: 10px;
-color: #ffff;
-margin-top: 10px !important;
- }
+.container-dashboard figure{
+    border: 2px solid #fff;
+}
+
+.container-dashboard  img{
+    width: 100%;
+    height: 300px;
+ 
+}
+
+.btn-danger {
+    color: #fff;
+  padding: 10px;
+    border: none !important;
+    border-radius: 8px;
+    background-color: #0a0632 !important;
+    display: flex;
+    flex-direction: column;
+    outline: none !important;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: block;
+    width: 70%;
+    height: 100%;
+    cursor: pointer;
+   
+  
+}
+
+ 
+ @media screen and (max-width: 1000px) {
+   
+    .btn-danger{
+        width: 100%;
+    }
+  }
+     
+ 
+ 
