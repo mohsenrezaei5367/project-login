@@ -375,6 +375,9 @@ label.error {
 input.error{
     border: 1px solid  #ff0000;
 }
+.text.sign-up h2, .text.sign-up p, .img.sign-up img {
+    transform: translateX(320%);
+}
 
 @media (max-width:600px) {
     .text-blue{
@@ -393,6 +396,7 @@ background-size: cover;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
     
 }
 .container-dashboard .wrapper{
@@ -411,19 +415,19 @@ background-size: cover;
    
 }
 
-.container-dashboard figure{
+.container-dashboard .btn-danger figure{
     border: 2px solid #fff;
     overflow: hidden;
     transition: all 500ms;
 }
 
-.container-dashboard  img{
+.container-dashboard .btn-danger  img{
     width: 100%;
     height: 300px;
     transform: scale(1);
  
 }
-.container-dashboard  img:hover{
+.container-dashboard .btn-danger  img:hover{
     transform: scale(1.1);
     transition: all 500ms;
 }
@@ -435,29 +439,23 @@ background-size: cover;
     border-radius: 8px;
     background-color: #0a0632 !important;
     display: flex;
-    flex-direction: column;
+
     outline: none !important;
     margin: 5px;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
     display: block;
-    width: 70%;
+  width: 70%;
     height: 100%;
     cursor: pointer;
     transition: all 500ms;
    
+   
   
 }
-.btn-danger:hover{
-    transform: scale(1.1);
-    border: 2px solid #fff !important;
-}
-.btn-danger:hover p{
-    font-size: 20px;
-    transition: all 500ms;
-    
-}
+
+
 
  
  @media screen and (max-width: 1000px) {
@@ -466,6 +464,16 @@ background-size: cover;
         width: 100%;
     }
   }
+
+  .btn-exit{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 20px;
+    height: 67px;
+}
+  
      
  
  

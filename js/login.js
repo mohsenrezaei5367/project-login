@@ -81,11 +81,14 @@ function validationRegisterForm() {
 validationRegisterForm()
 
 
-function btnLogin(e){
+function btnLogin(e) {
 
 
     window.open("dashboard.html", "_self");
-   
+
 }
 // end of validation
 
+function ExitBtn() {
+    window.open("index.html", "_self");
+}
